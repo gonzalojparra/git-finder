@@ -16,13 +16,13 @@ export default function ProfileCard({ user }: { user: UserProps }) {
 
     if (userProgress >= 100) {
       setBadge('🔥');
-      setTooltip(`${user.name} is on fire!`);
+      setTooltip(`${user.name ?? user.login } is on fire!`);
     } else if (userProgress >= 50) {
       setBadge('👍');
-      setTooltip(`${user.name} is doing great!`);
+      setTooltip(`${user.name ?? user.login } is doing great!`);
     } else {
       setBadge('❄️');
-      setTooltip(`${user.name} is just getting started!`);
+      setTooltip(`${user.name ?? user.login } is just getting started!`);
     }
   }, [user.public_repos]);
 
