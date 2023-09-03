@@ -18,7 +18,6 @@ export default function RootLayout({
       <body className='h-screen grid m-auto grid-rows-[60px,1fr,60px] gap-4 text-foreground bg-background'>
         <Providers>
           {children}
-          <footer className='flex items-center justify-center'>Con ♥️ por Gonza</footer>
         </Providers>
       </body>
     </html>

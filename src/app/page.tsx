@@ -3,11 +3,14 @@ import Home from "@/components/layouts/Home";
 
 export default function App() {
   return (
-    <section className='flex flex-col gap-4 py-5 px-4'>
+    <div className='flex flex-col min-h-screen py-5 px-4'>
       <div className='flex flex-col items-end'>
         <ThemeSwitch />
       </div>
       <Home />
-    </section>
+      <footer className='flex items-center justify-center mt-auto py-2'>
+        Con ♥️ por Gonza
+      </footer>
+    </div>
   )
 }
