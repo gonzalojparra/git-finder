@@ -9,7 +9,7 @@ export default function App() {
       </div>
       <Home />
       <footer className='flex items-center justify-center mt-auto py-2'>
-        Con ♥️ por Gonza
+        With ♥️ by Gonza
       </footer>
     </div>
   )
