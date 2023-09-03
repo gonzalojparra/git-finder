@@ -15,6 +15,14 @@ export default function ThemeSwitch() {
 
   if (!mounted) return null;
 
+  const toggleTheme = () => {
+    if (theme === 'purple-dark') {
+      setTheme('purple-light');
+    } else {
+      setTheme('purple-dark');
+    }
+  };
+
   let storageValue = localStorage.getItem('theme');
 
   return (
@@ -22,7 +30,7 @@ export default function ThemeSwitch() {
       {...(storageValue ? { isSelected: storageValue === 'purple-dark' } : {})}
       size="lg"
       color="secondary"
-      onChange={() => setTheme(theme === 'purple-dark' ? 'purple-light' : 'purple-dark')}
+      onChange={() => toggleTheme()}
       thumbIcon={({ isSelected, className }) =>
         isSelected ? (
           <SunIcon className={className} />
