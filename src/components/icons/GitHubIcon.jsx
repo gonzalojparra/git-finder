@@ -1,4 +1,4 @@
-export const GitHubIcon = (props) => {
+export const GitHubIcon = (props) => (
   <svg
     aria-hidden="true"
     focusable="false"
@@ -15,4 +15,4 @@ export const GitHubIcon = (props) => {
       fill="#24292f"
     />
   </svg>
-}
+)
