@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 import { Card, CardBody, Image, Button, Progress, Badge, Tooltip } from '@nextui-org/react';
+import { GitHubIcon } from '@/components/icons/GitHubIcon';
 
 import { UserProps } from '@/app/types';
 
@@ -65,7 +66,9 @@ export default function ProfileCard({ user }: { user: UserProps }) {
                 radius='full'
                 variant='light'
               >
-                <Link target='_blank' href={`${user.html_url}`}>🚀</Link>
+                <Link target='_blank' href={`${user.html_url}`}>
+                  <GitHubIcon />
+                </Link>
               </Button>
             </div>
 
